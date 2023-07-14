@@ -280,7 +280,9 @@ fun ListCard(
 
             RoundedButton(
                 label = if (isStartedReading.value) "Reading" else "Not started",
-                radius = 70)
+                radius = 70){
+                onPressDetails.invoke(book.title.toString())
+            }
         }
     }
 }

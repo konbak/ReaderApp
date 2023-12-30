@@ -276,7 +276,7 @@ fun SimpleForm(
     modifier: Modifier = Modifier,
     loading: Boolean = false,
     defaultValue: String = "Great Book!",
-    onSearch: (String) -> Unit
+    onAddText: (String) -> Unit
 ){
     Column {
         val textFieldValue = rememberSaveable { mutableStateOf(defaultValue) }
@@ -295,7 +295,7 @@ fun SimpleForm(
             enabled = true,
             onAction = KeyboardActions {
                 if (!valid)return@KeyboardActions
-                onSearch(textFieldValue.value.trim())
+                onAddText(textFieldValue.value.trim())
                 keyboardController?.hide()
             })
 

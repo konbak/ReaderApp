@@ -7,6 +7,6 @@ fun formatDate(timestamp: Timestamp): String {
     val date = DateFormat.getDateInstance()
         .format(timestamp.toDate())
         .toString()
-        .split(",")[0]
+       // .split(",")[0]
     return date
 }

@@ -66,7 +66,6 @@ fun Home(navController: NavController, viewModel: HomeScreenViewModel = hiltView
     }
 }
 
-
 @Composable
 fun HomeContent(
     navController: NavController = NavController(LocalContext.current),

@@ -79,7 +79,7 @@ fun HomeContent(
     if(!viewModel.data.value.data.isNullOrEmpty()){
         listOfBooks = viewModel.data.value.data!!.toList()
 
-        Log.d("Books", "HomeContent: ${listOfBooks.toString()}")
+        Log.d("Books", "HomeContent: ${listOfBooks}")
     }
 
     val email = FirebaseAuth.getInstance().currentUser?.email

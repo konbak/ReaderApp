@@ -73,7 +73,7 @@ fun HomeContent(
 ){
 
     var listOfBooks = emptyList<MBook>()
-    val currentUser = FirebaseAuth.getInstance().currentUser
+    //val currentUser = FirebaseAuth.getInstance().currentUser
 
     if(!viewModel.data.value.data.isNullOrEmpty()){
         listOfBooks = viewModel.data.value.data!!.toList()
@@ -184,7 +184,6 @@ fun HorizontalScrollableComponent(
                 }
             }
         }
-
     }
 }
 

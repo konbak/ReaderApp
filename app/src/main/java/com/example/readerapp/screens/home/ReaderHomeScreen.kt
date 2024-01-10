@@ -116,6 +116,7 @@ fun HomeContent(
                     maxLines = 1,
                     overflow = TextOverflow.Clip
                 )
+
                 Divider()
             }
         }
